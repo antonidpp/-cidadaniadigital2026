@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital: IA e Desinformação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Consciência Digital 2026</h1>
+        <button id="theme-toggle" class="btn-toggle">Alternar Modo Escuro</button>
+    </header>
+
+    <main class="container">
+        
+        <!-- Seção de Introdução e Contextualização -->
+        <section class="info-section">
+            <h2>O Impacto das Deepfakes</h2>
+            <p>As <strong>Deepfakes</strong> utilizam Inteligência Artificial para clonar vozes e simular rostos de forma hiper-realista. Elas são frequentemente usadas para espalhar desinformação automatizada, prejudicando a verdade e a cidadania digital.</p>
+            <div class="tips-box">
+                <h3>Como identificar uma fraude por IA?</h3>
+                <ul>
+                    <li>Piscadas de olhos não naturais ou ausentes.</li>
+                    <li>Falhas de sincronia entre o áudio da fala e o movimento dos lábios.</li>
+                    <li>Iluminação e sombras inconsistentes no rosto e fundo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Interativa com Formulário e Quiz -->
+        <section class="interactive-section">
+            <h2>Quiz Anti-Desinformação</h2>
+            <p>Teste suas habilidades para identificar notícias e mídias falsas criadas por robôs.</p>
+            
+            <form id="quiz-form">
+                <!-- Pergunta 1 -->
+                <div class="form-group">
+                    <label class="question-label">1. Você recebeu um vídeo alarmante de um político, mas o áudio parece robótico e os lábios não batem com o som. O que fazer?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="errado" required> Compartilhar imediatamente para alertar os amigos.</label>
+                        <label><input type="radio" name="q1" value="certo"> Desconfiar, não compartilhar e pesquisar em canais de notícias confiáveis.</label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="form-group">
+                    <label class="question-label">2. Qual é a principal característica que ajuda a flagrar uma foto gerada por IA?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="certo" required> Detalhes estranhos nas mãos, dentes excessivos e fundos distorcidos.</label>
+                        <label><input type="radio" name="q2" value="errado"> A imagem ter cores muito bonitas e vibrantes.</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Respostas</button>
+            </form>
+
+            <!-- Div que será manipulada pelo JavaScript para mostrar o resultado -->
+            <div id="quiz-result" class="result-box hidden"></div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 - Projeto Escolar de Educação Digital e IA. Pratique a Cidadania Digital.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
